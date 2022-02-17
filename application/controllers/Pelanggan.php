@@ -8,7 +8,7 @@ class Pelanggan extends CI_Controller {
 			redirect('welcome/login');
 		}
     }
-
+// untuk index admin
     public function index(){
         $data['kmr'] = $this->Mcrud->get_limit('kamera')->result();
         $this->template->load('user/layout','user/main',$data);
